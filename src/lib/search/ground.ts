@@ -69,12 +69,7 @@ export async function groundHits(hits: ModelHit[], sort: SearchSort): Promise<Se
 
     // A video hit without a real start second is just a lesson hit — the model was told never to
     // estimate one, and a moment with no timestamp has nothing to link to.
-    const startSeconds =
-      hit.kind === "video" && hit.startSeconds !== null && hit.startSeconds >= 0
-        ? hit.startSeconds
-        : null;
-
-    results.push(
+    const resolvedMoment = resolveVideoMoment(lesson, hit);\n    const startSeconds = resolvedMoment?.startSeconds ?? null;\n\n    results.push(
       startSeconds === null
         ? { ...base, kind: "lesson", href: lessonHref(lesson.slug) }
         : {
@@ -90,10 +85,7 @@ export async function groundHits(hits: ModelHit[], sort: SearchSort): Promise<Se
   return sortResults(results, lessonsById, sort);
 }
 
-type LessonsById = Map<string, { _createdAt: string }>;
-
-/**
- * Sorting happens here rather than in the model: it is deterministic, and re-sorting never costs
+type GroundedLesson = {\n  video?: {\n    url?: string | null;\n    chapters?: Array<{ startSeconds?: number | null; label?: string | null }> | null;\n    chunks?: Array<{ startSeconds?: number | null; text?: string | null }> | null;\n  } | null;\n};\n\n/** Chapters are authoritative; transcript chunks are a backstop only. */\nfunction resolveVideoMoment(lesson: GroundedLesson, hit: ModelHit) {\n  if (hit.kind !== "video" || hit.startSeconds === null || hit.startSeconds < 0) return null;\n\n  const second = Math.floor(hit.startSeconds);\n  const chapter = lesson.video?.chapters?.find((item) => item.startSeconds === second);\n  if (chapter) return { startSeconds: second, momentLabel: chapter.label ?? hit.momentLabel ?? null };\n\n  const chunk = lesson.video?.chunks?.find((item) => item.startSeconds === second);\n  if (chunk) return { startSeconds: second, momentLabel: null };\n\n  return null;\n}\n\ntype LessonsById = Map<string, { _createdAt: string }>;\n\n/**\n * Sorting happens here rather than in the model: it is deterministic, and re-sorting never costs
  * another LLM call. `relevance` is the model's own ranking (§11's default).
  */
 function sortResults(results: SearchResult[], lessons: LessonsById, sort: SearchSort) {
