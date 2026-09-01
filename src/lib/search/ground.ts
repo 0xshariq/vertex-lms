@@ -86,7 +86,7 @@ export async function groundHits(hits: ModelHit[], sort: SearchSort): Promise<Se
 /** Chapters are authoritative. Transcript chunks are used only when no chapter matches. */
 function resolveVideoMoment(lesson: GroundedLesson, hit: ModelHit) {
   if (hit.kind !== "video" || hit.startSeconds === null || hit.startSeconds < 0) return null;
-  const second = Math.floor(hit.startSeconds);
+  const second = hit.startSeconds;
   const chapter = lesson.video?.chapters?.find((item) => item.startSeconds === second);
   if (chapter) return { startSeconds: second, momentLabel: chapter.label ?? hit.momentLabel ?? null };
   const chunk = lesson.video?.chunks?.find((item) => item.startSeconds === second);
