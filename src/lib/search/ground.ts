@@ -6,48 +6,53 @@ import { CACHE_TAGS, sanityFetch } from "@/sanity/lib/fetch";
 import { LESSONS_BY_IDS_QUERY } from "@/sanity/lib/queries";
 import { MAX_RESULTS, type ModelHit, type SearchResult, type SearchSort } from "./types";
 
-/**
- * Turns the model's hits into result cards built entirely from the dataset.
- *
- * The model contributes a lesson `_id`, a reason, a rank, and — on a video hit — a start second it
- * read out of a real chapter or transcript chunk. Everything a card displays is read back from
- * Sanity here, so a hallucinated title or duration cannot reach the response (AGENTS.md §7). A hit
- * naming a lesson that does not resolve is dropped.
- */
+type GroundedLesson = {
+  _id: string;
+  _createdAt: string;
+  title?: string | null;
+  slug?: string | null;
+  duration?: number | null;
+  freePreview?: boolean | null;
+  keyPoints?: string[] | null;
+  thumbnailRef?: string | null;
+  video?: {
+    url?: string | null;
+    chapters?: Array<{ startSeconds?: number | null; label?: string | null }> | null;
+    chunks?: Array<{ startSeconds?: number | null; text?: string | null }> | null;
+  } | null;
+  course?: {
+    title?: string | null;
+    slug?: string | null;
+    iconRef?: string | null;
+    modules?: Array<{ title?: string | null; lessonIds?: string[] | null }> | null;
+  } | null;
+};
+
+/** Turns model-authored ids into cards built only from verified Sanity data. */
 export async function groundHits(hits: ModelHit[], sort: SearchSort): Promise<SearchResult[]> {
   const ranked = [...hits].sort((a, b) => a.rank - b.rank).slice(0, MAX_RESULTS);
-
-  // One hit per lesson: the model is told to merge, this enforces it.
   const byLesson = new Map<string, ModelHit>();
-  for (const hit of ranked) {
-    if (!byLesson.has(hit.lessonId)) byLesson.set(hit.lessonId, hit);
-  }
+  for (const hit of ranked) if (!byLesson.has(hit.lessonId)) byLesson.set(hit.lessonId, hit);
 
   const ids = [...byLesson.keys()];
   if (!ids.length) return [];
 
-  const lessons = await sanityFetch({
+  const lessons = (await sanityFetch({
     query: LESSONS_BY_IDS_QUERY,
     params: { ids },
     tags: [CACHE_TAGS.lesson, CACHE_TAGS.course],
-  });
-
+  })) as GroundedLesson[];
   const lessonsById = new Map(lessons.map((lesson) => [lesson._id, lesson]));
-
   const results: SearchResult[] = [];
 
   for (const hit of byLesson.values()) {
     const lesson = lessonsById.get(hit.lessonId);
+    const course = lesson?.course;
+    const modules = course?.modules ?? [];
+    if (!lesson?.slug || !lesson.title || !course?.title || !course.slug) continue;
 
-    // The model named something that is not a lesson in this dataset, or the lesson is orphaned and
-    // has no course to label it with. Either way there is no card to show.
-    if (!lesson?.slug || !lesson.title || !lesson.course?.title || !lesson.course.slug) continue;
-
-    const modules = lesson.course.modules ?? [];
     const moduleIndex = modules.findIndex((module) => module.lessonIds?.includes(lesson._id));
-    if (moduleIndex < 0) continue;
-
-    const lessonIndex = modules[moduleIndex].lessonIds?.indexOf(lesson._id) ?? -1;
+    const lessonIndex = moduleIndex < 0 ? -1 : (modules[moduleIndex].lessonIds?.indexOf(lesson._id) ?? -1);
     if (lessonIndex < 0) continue;
 
     const base = {
@@ -56,9 +61,9 @@ export async function groundHits(hits: ModelHit[], sort: SearchSort): Promise<Se
       lessonTitle: lesson.title,
       label: lessonLabel(moduleIndex, lessonIndex),
       moduleTitle: modules[moduleIndex].title ?? null,
-      courseTitle: lesson.course.title,
-      courseSlug: lesson.course.slug,
-      courseIconRef: lesson.course.iconRef ?? null,
+      courseTitle: course.title,
+      courseSlug: course.slug,
+      courseIconRef: course.iconRef ?? null,
       durationSeconds: lesson.duration ?? null,
       freePreview: lesson.freePreview ?? false,
       keyPoints: lesson.keyPoints ?? [],
@@ -67,47 +72,31 @@ export async function groundHits(hits: ModelHit[], sort: SearchSort): Promise<Se
       rank: hit.rank,
     };
 
-    // A video hit without a real start second is just a lesson hit — the model was told never to
-    // estimate one, and a moment with no timestamp has nothing to link to.
-    const startSeconds =
-      hit.kind === "video" && hit.startSeconds !== null && hit.startSeconds >= 0
-        ? hit.startSeconds
-        : null;
-
+    const moment = resolveVideoMoment(lesson, hit);
     results.push(
-      startSeconds === null
-        ? { ...base, kind: "lesson", href: lessonHref(lesson.slug) }
-        : {
-            ...base,
-            kind: "video",
-            startSeconds,
-            momentLabel: hit.momentLabel ?? null,
-            href: lessonHref(lesson.slug, startSeconds),
-          },
+      moment
+        ? { ...base, kind: "video", startSeconds: moment.startSeconds, momentLabel: moment.momentLabel, href: lessonHref(lesson.slug, moment.startSeconds) }
+        : { ...base, kind: "lesson", href: lessonHref(lesson.slug) },
     );
   }
 
   return sortResults(results, lessonsById, sort);
 }
 
-type LessonsById = Map<string, { _createdAt: string }>;
+/** Chapters are authoritative. Transcript chunks are used only when no chapter matches. */
+function resolveVideoMoment(lesson: GroundedLesson, hit: ModelHit) {
+  if (hit.kind !== "video" || hit.startSeconds === null || hit.startSeconds < 0) return null;
+  const second = hit.startSeconds;
+  const chapter = lesson.video?.chapters?.find((item) => item.startSeconds === second);
+  if (chapter) return { startSeconds: second, momentLabel: chapter.label ?? hit.momentLabel ?? null };
+  const chunk = lesson.video?.chunks?.find((item) => item.startSeconds === second);
+  return chunk ? { startSeconds: second, momentLabel: null } : null;
+}
 
-/**
- * Sorting happens here rather than in the model: it is deterministic, and re-sorting never costs
- * another LLM call. `relevance` is the model's own ranking (§11's default).
- */
-function sortResults(results: SearchResult[], lessons: LessonsById, sort: SearchSort) {
+function sortResults(results: SearchResult[], lessons: Map<string, GroundedLesson>, sort: SearchSort) {
   if (sort === "relevance") return results.sort((a, b) => a.rank - b.rank);
-
   if (sort === "duration") {
-    return results.sort(
-      (a, b) => (a.durationSeconds ?? Infinity) - (b.durationSeconds ?? Infinity) || a.rank - b.rank,
-    );
+    return results.sort((a, b) => (a.durationSeconds ?? Infinity) - (b.durationSeconds ?? Infinity) || a.rank - b.rank);
   }
-
-  return results.sort((a, b) => {
-    const createdA = lessons.get(a.lessonId)?._createdAt ?? "";
-    const createdB = lessons.get(b.lessonId)?._createdAt ?? "";
-    return createdB.localeCompare(createdA) || a.rank - b.rank;
-  });
+  return results.sort((a, b) => (lessons.get(b.lessonId)?._createdAt ?? "").localeCompare(lessons.get(a.lessonId)?._createdAt ?? "") || a.rank - b.rank);
 }
