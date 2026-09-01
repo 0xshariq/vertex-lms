@@ -26,8 +26,8 @@ export async function generateStaticParams() {
   const courses = await sanityFetch({ query: COURSE_SLUGS_QUERY, tags: [CACHE_TAGS.course] });
 
   return courses
-    .filter((course) => course.slug !== null)
-    .map((course) => ({ slug: course.slug as string }));
+    .filter((course: { slug?: string | null }) => course.slug !== null)
+    .map((course: { slug?: string | null }) => ({ slug: course.slug as string }));
 }
 
 export async function generateMetadata({
@@ -54,7 +54,7 @@ export default async function CoursePage({ params }: PageProps<"/courses/[slug]"
   const outcomes = course.learningOutcomes ?? [];
 
   // Progress is not tracked yet (AGENTS.md §7), so "continue" means the first lesson.
-  const firstLessonSlug = modules.flatMap((module) => module.lessons ?? [])[0]?.slug ?? null;
+  const firstLessonSlug = modules.flatMap((module: { lessons?: Array<{ slug?: string | null }> }) => module.lessons ?? [])[0]?.slug ?? null;
   const continueHref = firstLessonSlug ? lessonHref(firstLessonSlug) : null;
 
   return (
