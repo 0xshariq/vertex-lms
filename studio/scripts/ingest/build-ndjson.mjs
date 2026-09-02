@@ -42,6 +42,9 @@ const check = (condition, message) => {
 const isNonNegativeInteger = (value) => Number.isInteger(value) && value >= 0
 
 const documents = []
+const emittedIdentities = new Map()
+const emittedDocumentIds = new Map()
+const emittedUrls = new Map()
 
 for (const file of files) {
   const cached = JSON.parse(readFileSync(join(CACHE_DIR, file), 'utf8'))
@@ -73,6 +76,16 @@ for (const file of files) {
     typeof cached.ingestedAt === 'string' && !Number.isNaN(Date.parse(cached.ingestedAt)),
     `${where}: missing or invalid ingestedAt — re-run scripts/ingest/ingest-videos.mjs for it`,
   )
+
+  const identity = `${cached.provider}:${cached.videoId}`
+  const duplicateSource = emittedDocumentIds.get(cached._id) ?? emittedUrls.get(cached.url) ?? emittedIdentities.get(identity)
+  if (duplicateSource) {
+    console.warn(`Skipping duplicate cache entry ${file}; keeping ${duplicateSource}`)
+    continue
+  }
+  emittedDocumentIds.set(cached._id, file)
+  emittedUrls.set(cached.url, file)
+  emittedIdentities.set(identity, file)
 
   let previousChapter = -1
   chapters.forEach((chapter, index) => {

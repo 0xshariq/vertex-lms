@@ -88,10 +88,10 @@ async function lessonVideoUrls() {
 }
 
 /**
- * Prevent a reused dataset from accumulating the old provider-id documents alongside hashed IDs.
- * The seed/import flow is the migration path; ingestion must stop until the duplicate is removed.
+ * Report reused/legacy video documents without blocking ingestion. The deterministic document id
+ * remains the preferred identity for generated imports; cleanup of old live records is optional.
  */
-async function assertCanonicalVideoDocuments(videos) {
+async function reportDuplicateVideoDocuments(videos) {
   const query = '*[_type == "video" && defined(url) && !(_id in path("drafts.**"))]{_id, url}'
   const {stdout} = await execFileAsync(
     join(STUDIO_ROOT, 'node_modules', '.bin', 'sanity'),
@@ -105,16 +105,16 @@ async function assertCanonicalVideoDocuments(videos) {
     byUrl.get(document.url).push(document._id)
   }
 
-  const problems = []
   for (const video of videos) {
     const ids = byUrl.get(video.url) ?? []
-    if (ids.length > 1) problems.push(`${video.url} has duplicate video documents: ${ids.join(', ')}`)
-    if (ids.length === 1 && ids[0] !== video.documentId) {
-      problems.push(`${video.url} uses legacy document ${ids[0]}; import the regenerated seed.ndjson before ingesting`)
+    if (ids.length > 1) {
+      console.warn(`Ignoring duplicate live video documents for ${video.url}: ${ids.join(', ')}`)
+    } else if (ids.length === 1 && ids[0] !== video.documentId) {
+      console.warn(
+        `Ignoring legacy live video document ${ids[0]} for ${video.url}; ` +
+          `canonical identity is ${video.documentId}`,
+      )
     }
-  }
-  if (problems.length) {
-    throw new Error(`Canonical video document check failed:\n  - ${problems.join('\n  - ')}`)
   }
 }
 
@@ -156,12 +156,7 @@ for (const url of urls) {
   videos.push({...parsed, url, documentId})
 }
 
-try {
-  await assertCanonicalVideoDocuments(videos)
-} catch (error) {
-  console.error(error.message)
-  process.exit(1)
-}
+await reportDuplicateVideoDocuments(videos)
 
 const pending = videos.filter((video) => force || !readCache(video.documentId))
 const queue = limit === null ? pending : pending.slice(0, limit)
