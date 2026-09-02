@@ -20,6 +20,7 @@ import {dirname, join} from 'node:path'
 import {fileURLToPath} from 'node:url'
 
 import {categories, courses, instructors} from './content.mjs'
+import {videoDocumentId} from '../ingest/parse-video-url.mjs'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const CACHE_PATH = join(HERE, 'videos.json')
@@ -258,6 +259,36 @@ for (const course of courses) {
       return {_type: 'learningOutcome', _key: keyOf(course.slug, 'outcome', String(index)), ...outcome}
     }),
     modules,
+  })
+}
+
+/* ------------------------------------------------------- video documents */
+
+const emittedVideos = new Set()
+for (const video of Object.values(videos)) {
+  const provider = video?.provider ?? 'youtube'
+  const identity = video?.id ? `${provider}:${video.id}` : null
+  if (!identity || emittedVideos.has(identity)) continue
+  emittedVideos.add(identity)
+  documents.push({
+    _id: video.documentId ?? videoDocumentId({provider, id: video.id}),
+    _type: 'video',
+    videoId: video.id,
+    provider,
+    url: video.url ?? `https://www.youtube.com/watch?v=${video.id}`,
+    chapters: (video.chapters ?? []).map((chapter, index) => ({
+      _type: 'videoChapter',
+      _key: keyOf(video.id, 'chapter', String(index)),
+      startSeconds: chapter.startSeconds,
+      label: chapter.label,
+    })),
+    chunks: (video.chunks ?? []).map((chunk, index) => ({
+      _type: 'videoChunk',
+      _key: keyOf(video.id, 'chunk', String(index)),
+      startSeconds: chunk.startSeconds,
+      text: chunk.text,
+    })),
+    ingestedAt: video.ingestedAt,
   })
 }
 

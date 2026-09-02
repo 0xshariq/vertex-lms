@@ -87,6 +87,37 @@ async function lessonVideoUrls() {
   return [...new Set(Array.isArray(urls) ? urls : [])]
 }
 
+/**
+ * Prevent a reused dataset from accumulating the old provider-id documents alongside hashed IDs.
+ * The seed/import flow is the migration path; ingestion must stop until the duplicate is removed.
+ */
+async function assertCanonicalVideoDocuments(videos) {
+  const query = '*[_type == "video" && defined(url) && !(_id in path("drafts.**"))]{_id, url}'
+  const {stdout} = await execFileAsync(
+    join(STUDIO_ROOT, 'node_modules', '.bin', 'sanity'),
+    ['documents', 'query', query],
+    {cwd: STUDIO_ROOT, maxBuffer: 32 * 1024 * 1024},
+  )
+  const existing = JSON.parse(stdout)
+  const byUrl = new Map()
+  for (const document of Array.isArray(existing) ? existing : []) {
+    if (!byUrl.has(document.url)) byUrl.set(document.url, [])
+    byUrl.get(document.url).push(document._id)
+  }
+
+  const problems = []
+  for (const video of videos) {
+    const ids = byUrl.get(video.url) ?? []
+    if (ids.length > 1) problems.push(`${video.url} has duplicate video documents: ${ids.join(', ')}`)
+    if (ids.length === 1 && ids[0] !== video.documentId) {
+      problems.push(`${video.url} uses legacy document ${ids[0]}; import the regenerated seed.ndjson before ingesting`)
+    }
+  }
+  if (problems.length) {
+    throw new Error(`Canonical video document check failed:\n  - ${problems.join('\n  - ')}`)
+  }
+}
+
 async function ingest({provider, id}) {
   const adapter = PROVIDERS[provider]
   if (!adapter) throw new Error(`no ingestion adapter for ${provider}`)
@@ -123,6 +154,13 @@ for (const url of urls) {
   if (seen.has(documentId)) continue
   seen.add(documentId)
   videos.push({...parsed, url, documentId})
+}
+
+try {
+  await assertCanonicalVideoDocuments(videos)
+} catch (error) {
+  console.error(error.message)
+  process.exit(1)
 }
 
 const pending = videos.filter((video) => force || !readCache(video.documentId))
