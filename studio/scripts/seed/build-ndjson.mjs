@@ -266,13 +266,15 @@ for (const course of courses) {
 
 const emittedVideos = new Set()
 for (const video of Object.values(videos)) {
-  if (!video?.id || emittedVideos.has(video.id)) continue
-  emittedVideos.add(video.id)
+  const provider = video?.provider ?? 'youtube'
+  const identity = video?.id ? `${provider}:${video.id}` : null
+  if (!identity || emittedVideos.has(identity)) continue
+  emittedVideos.add(identity)
   documents.push({
-    _id: video.documentId ?? videoDocumentId({provider: video.provider ?? 'youtube', id: video.id}),
+    _id: video.documentId ?? videoDocumentId({provider, id: video.id}),
     _type: 'video',
     videoId: video.id,
-    provider: video.provider ?? 'youtube',
+    provider,
     url: video.url ?? `https://www.youtube.com/watch?v=${video.id}`,
     chapters: (video.chapters ?? []).map((chapter, index) => ({
       _type: 'videoChapter',
