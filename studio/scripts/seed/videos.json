@@ -43,7 +43,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "9602Yzvd7ik",
+    "documentId": "video.youtube-c429477a24cb975c6b50"
   },
   "nextjs-app-router-in-depth-layouts-and-templates": {
     "id": "k48WMdl2eUc",
@@ -89,7 +91,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "k48WMdl2eUc",
+    "documentId": "video.youtube-4872d84279c4f32d5330"
   },
   "nextjs-app-router-in-depth-dynamic-routes-and-params": {
     "id": "j3QJ1Rhxxbw",
@@ -135,7 +139,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "j3QJ1Rhxxbw",
+    "documentId": "video.youtube-03dd7b568e9b8a089013"
   },
   "nextjs-app-router-in-depth-server-components": {
     "id": "rGPpQdbDbwo",
@@ -181,7 +187,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "rGPpQdbDbwo",
+    "documentId": "video.youtube-a4ee36b16beafe7a7c75"
   },
   "nextjs-app-router-in-depth-use-client-boundary": {
     "id": "Qdkg_mrniLk",
@@ -227,7 +235,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "Qdkg_mrniLk",
+    "documentId": "video.youtube-ebb9ce276e3604cdbb13"
   },
   "nextjs-app-router-in-depth-passing-data-across-the-boundary": {
     "id": "dMCSiA5gzkU",
@@ -273,7 +283,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "dMCSiA5gzkU",
+    "documentId": "video.youtube-e982f1c8f3ad09fc69a9"
   },
   "nextjs-app-router-in-depth-fetching-in-server-components": {
     "id": "WKfPctdIDek",
@@ -319,7 +331,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "WKfPctdIDek",
+    "documentId": "video.youtube-38866bca5b1b0db36981"
   },
   "nextjs-app-router-in-depth-caching-and-revalidation": {
     "id": "VBlSe8tvg4U",
@@ -365,7 +379,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "VBlSe8tvg4U",
+    "documentId": "video.youtube-9ea81cb4548ba3062912"
   },
   "nextjs-app-router-in-depth-streaming-and-suspense": {
     "id": "2o5m1ovfl3c",
@@ -411,7 +427,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "2o5m1ovfl3c",
+    "documentId": "video.youtube-ccd488ffc3064d8ac8fc"
   },
   "nextjs-app-router-in-depth-server-actions-basics": {
     "id": "O94ESaJtHtM",
@@ -457,7 +475,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "O94ESaJtHtM",
+    "documentId": "video.youtube-f066b87f00c25626498f"
   },
   "nextjs-app-router-in-depth-forms-and-validation": {
     "id": "tLhcyBfljYo",
@@ -503,7 +523,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "tLhcyBfljYo",
+    "documentId": "video.youtube-a3896091ca3c60dfe8f5"
   },
   "nextjs-app-router-in-depth-optimistic-updates": {
     "id": "M3mGY0pgFk0",
@@ -549,7 +571,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "M3mGY0pgFk0",
+    "documentId": "video.youtube-7f228e16c37d185b76a6"
   },
   "react-performance-engineering-react-devtools-profiler": {
     "id": "Qwb-Za6cBws",
@@ -595,7 +619,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "Qwb-Za6cBws",
+    "documentId": "video.youtube-42baa8856b155ff98bc6"
   },
   "react-performance-engineering-core-web-vitals": {
     "id": "cGiSr0MilsI",
@@ -641,7 +667,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "cGiSr0MilsI",
+    "documentId": "video.youtube-9a68ca7184821314e781"
   },
   "react-performance-engineering-finding-wasted-renders": {
     "id": "L5kCvTuddGE",
@@ -687,7 +715,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "L5kCvTuddGE",
+    "documentId": "video.youtube-5185c27e0127c815da64"
   },
   "react-performance-engineering-react-memo": {
     "id": "Yh2eH4fXgbU",
@@ -733,7 +763,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "Yh2eH4fXgbU",
+    "documentId": "video.youtube-18e99c6246f5eb30100e"
   },
   "react-performance-engineering-usememo-and-usecallback": {
     "id": "vpE9I_eqHdM",
@@ -779,7 +811,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "vpE9I_eqHdM",
+    "documentId": "video.youtube-feb3adb1c31799d6a1ab"
   },
   "react-performance-engineering-keys-and-reconciliation": {
     "id": "fGxKOmCuH5w",
@@ -825,7 +859,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "fGxKOmCuH5w",
+    "documentId": "video.youtube-ab6297eb5b903c221ec5"
   },
   "react-performance-engineering-usetransition": {
     "id": "1xjSQJWejZM",
@@ -871,7 +907,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "1xjSQJWejZM",
+    "documentId": "video.youtube-3097773fb867afbea27c"
   },
   "react-performance-engineering-usedeferredvalue": {
     "id": "jCGMedd6IWA",
@@ -917,7 +955,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "jCGMedd6IWA",
+    "documentId": "video.youtube-6415bf6f918e1e4c1dc2"
   },
   "react-performance-engineering-suspense-for-data": {
     "id": "MBlZ8Wzkbi4",
@@ -963,7 +1003,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "MBlZ8Wzkbi4",
+    "documentId": "video.youtube-a3edec8fae7dc8fea4f7"
   },
   "react-performance-engineering-code-splitting": {
     "id": "MUSoj2JcD4A",
@@ -1009,7 +1051,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "MUSoj2JcD4A",
+    "documentId": "video.youtube-3f01dd1db2b6764aa04f"
   },
   "react-performance-engineering-lazy-loading-and-prefetch": {
     "id": "fZ4zKgVXOP4",
@@ -1055,7 +1099,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "fZ4zKgVXOP4",
+    "documentId": "video.youtube-220feb78e6de65f484e5"
   },
   "react-performance-engineering-images-and-fonts": {
     "id": "0fONene3OIA",
@@ -1101,7 +1147,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "0fONene3OIA",
+    "documentId": "video.youtube-fb036d22544f9598d0bc"
   },
   "typescript-for-application-developers-structural-typing": {
     "id": "zfQgsGXTpOg",
@@ -1147,7 +1195,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "zfQgsGXTpOg",
+    "documentId": "video.youtube-69040f7f481a7f1ef3f6"
   },
   "typescript-for-application-developers-unions-and-narrowing": {
     "id": "CG3_Y9T03J4",
@@ -1193,7 +1243,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "CG3_Y9T03J4",
+    "documentId": "video.youtube-b99d36ce3066fd8c9c29"
   },
   "typescript-for-application-developers-literal-types-and-const": {
     "id": "6M9aZzm-kEc",
@@ -1239,7 +1291,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "6M9aZzm-kEc",
+    "documentId": "video.youtube-a4195f944386d2d615f5"
   },
   "typescript-for-application-developers-generic-functions": {
     "id": "EcCTIExsqmI",
@@ -1285,7 +1339,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "EcCTIExsqmI",
+    "documentId": "video.youtube-3371b725ee59fe0f976a"
   },
   "typescript-for-application-developers-generic-constraints": {
     "id": "zfLpzpH1t6Q",
@@ -1331,7 +1387,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "zfLpzpH1t6Q",
+    "documentId": "video.youtube-9b50147ae46fc3bb6654"
   },
   "typescript-for-application-developers-generic-react-components": {
     "id": "5s6dIkrv6Y4",
@@ -1377,7 +1435,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "5s6dIkrv6Y4",
+    "documentId": "video.youtube-da2dfc0204e29537d010"
   },
   "typescript-for-application-developers-conditional-types": {
     "id": "KcDzkOJpCaI",
@@ -1423,7 +1483,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "KcDzkOJpCaI",
+    "documentId": "video.youtube-c66a840f89a6575dca7f"
   },
   "typescript-for-application-developers-mapped-types": {
     "id": "iCEJY9XpfG8",
@@ -1469,7 +1531,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "iCEJY9XpfG8",
+    "documentId": "video.youtube-3579150bb431a9a607f7"
   },
   "typescript-for-application-developers-template-literal-types": {
     "id": "nskIP1iyrAo",
@@ -1515,7 +1579,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "nskIP1iyrAo",
+    "documentId": "video.youtube-d001f09df72d8ab1d6aa"
   },
   "typescript-for-application-developers-tsconfig-strictness": {
     "id": "0XrviXgk_rY",
@@ -1561,7 +1627,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "0XrviXgk_rY",
+    "documentId": "video.youtube-f98e7500bee8ae916bc0"
   },
   "typescript-for-application-developers-typing-apis-with-zod": {
     "id": "9UVPk0Ulm6U",
@@ -1607,7 +1675,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "9UVPk0Ulm6U",
+    "documentId": "video.youtube-9b89e8d44394baf79924"
   },
   "typescript-for-application-developers-declaration-files": {
     "id": "s_CZeWuEZ_s",
@@ -1653,7 +1723,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "s_CZeWuEZ_s",
+    "documentId": "video.youtube-0014700e9dd590899825"
   },
   "building-ai-apps-with-llms-tokens-and-context-windows": {
     "id": "-QVoIxEpFkM",
@@ -1699,7 +1771,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "-QVoIxEpFkM",
+    "documentId": "video.youtube-2de1f13909602f1ff75b"
   },
   "building-ai-apps-with-llms-temperature-and-sampling": {
     "id": "-BBulGM6xF0",
@@ -1745,7 +1819,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "-BBulGM6xF0",
+    "documentId": "video.youtube-0dbf81d2f1e7df6d2126"
   },
   "building-ai-apps-with-llms-choosing-a-model": {
     "id": "pYax2rupKEY",
@@ -1791,7 +1867,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "pYax2rupKEY",
+    "documentId": "video.youtube-b316e57b976d859880bb"
   },
   "building-ai-apps-with-llms-system-prompts": {
     "id": "MO3U1X8-NNQ",
@@ -1837,7 +1915,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "MO3U1X8-NNQ",
+    "documentId": "video.youtube-d85df3bc18a5d26e0e74"
   },
   "building-ai-apps-with-llms-few-shot-prompting": {
     "id": "9qdgEBVkWR4",
@@ -1883,7 +1963,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "9qdgEBVkWR4",
+    "documentId": "video.youtube-641f7d5ae52fbf865cd6"
   },
   "building-ai-apps-with-llms-structured-output": {
     "id": "CllLqPwCjD4",
@@ -1929,7 +2011,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "CllLqPwCjD4",
+    "documentId": "video.youtube-93fa0158743781e28b4c"
   },
   "building-ai-apps-with-llms-tool-calling": {
     "id": "gMeTK6zzaO4",
@@ -1975,7 +2059,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "gMeTK6zzaO4",
+    "documentId": "video.youtube-dcda84689fb7baa004b7"
   },
   "building-ai-apps-with-llms-agent-loops": {
     "id": "GErEgIOMy_4",
@@ -2021,7 +2107,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "GErEgIOMy_4",
+    "documentId": "video.youtube-03d85583814eb3e824b9"
   },
   "building-ai-apps-with-llms-guardrails-and-evals": {
     "id": "GvNrhULVpHI",
@@ -2067,7 +2155,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "GvNrhULVpHI",
+    "documentId": "video.youtube-d7ec8b7b0c02327bdf3a"
   },
   "building-ai-apps-with-llms-streaming-responses": {
     "id": "hOAAg1WaZh8",
@@ -2113,7 +2203,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "hOAAg1WaZh8",
+    "documentId": "video.youtube-6362064f1ae01fbc129a"
   },
   "building-ai-apps-with-llms-cost-and-latency": {
     "id": "E3j-4XH0q4g",
@@ -2159,7 +2251,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "E3j-4XH0q4g",
+    "documentId": "video.youtube-bb811fc49aa4d6812f1e"
   },
   "building-ai-apps-with-llms-caching-and-rate-limits": {
     "id": "u57EnkQaUTY",
@@ -2205,7 +2299,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "u57EnkQaUTY",
+    "documentId": "video.youtube-818055d1b42653501c78"
   },
   "retrieval-augmented-generation-from-scratch-what-embeddings-are": {
     "id": "wgfSDrqYMJ4",
@@ -2251,7 +2347,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "wgfSDrqYMJ4",
+    "documentId": "video.youtube-5a23b0721726845dff87"
   },
   "retrieval-augmented-generation-from-scratch-vector-databases": {
     "id": "dN0lsF2cvm4",
@@ -2297,7 +2395,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "dN0lsF2cvm4",
+    "documentId": "video.youtube-58380ab5be734eb9dd1e"
   },
   "retrieval-augmented-generation-from-scratch-similarity-metrics": {
     "id": "yGsGQBGzy6Y",
@@ -2343,7 +2443,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "yGsGQBGzy6Y",
+    "documentId": "video.youtube-5021e99d859f222e465f"
   },
   "retrieval-augmented-generation-from-scratch-chunking-strategies": {
     "id": "pIGRwMjhMaQ",
@@ -2389,7 +2491,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "pIGRwMjhMaQ",
+    "documentId": "video.youtube-23f5fd0cc6b447c1af67"
   },
   "retrieval-augmented-generation-from-scratch-metadata-and-filtering": {
     "id": "RPpGIxmdZYs",
@@ -2435,7 +2539,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "RPpGIxmdZYs",
+    "documentId": "video.youtube-48721e3c9705e6cf7ae0"
   },
   "retrieval-augmented-generation-from-scratch-keeping-the-index-fresh": {
     "id": "PmA_0DT7zds",
@@ -2481,7 +2587,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "PmA_0DT7zds",
+    "documentId": "video.youtube-2764e1cabb12e9fe9675"
   },
   "retrieval-augmented-generation-from-scratch-hybrid-search": {
     "id": "lYxGYXjfrNI",
@@ -2527,7 +2635,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "lYxGYXjfrNI",
+    "documentId": "video.youtube-caeaca85cd3b7f5c267e"
   },
   "retrieval-augmented-generation-from-scratch-reranking": {
     "id": "aVgZE746OXw",
@@ -2573,7 +2683,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "aVgZE746OXw",
+    "documentId": "video.youtube-32d6ae2c0f23e0cd2b24"
   },
   "retrieval-augmented-generation-from-scratch-evaluating-retrieval": {
     "id": "7_LTU0LA374",
@@ -2619,7 +2731,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "7_LTU0LA374",
+    "documentId": "video.youtube-edf41ed3e6c5a4246908"
   },
   "retrieval-augmented-generation-from-scratch-grounding-and-citations": {
     "id": "YZmCy-cGmbs",
@@ -2665,7 +2779,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "YZmCy-cGmbs",
+    "documentId": "video.youtube-d0f391472bd79092c1cc"
   },
   "retrieval-augmented-generation-from-scratch-handling-no-answer": {
     "id": "DAmklaX4UKE",
@@ -2711,7 +2827,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "DAmklaX4UKE",
+    "documentId": "video.youtube-89876c0bc886c721aa54"
   },
   "retrieval-augmented-generation-from-scratch-end-to-end-rag-evaluation": {
     "id": "cRz0BWkuwHg",
@@ -2757,7 +2875,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "cRz0BWkuwHg",
+    "documentId": "video.youtube-e146ed02fce3a903bf1a"
   },
   "python-for-data-work-python-data-types": {
     "id": "MZZSMaEAC2g",
@@ -2803,7 +2923,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "MZZSMaEAC2g",
+    "documentId": "video.youtube-48e2b0089999e661ea2b"
   },
   "python-for-data-work-comprehensions": {
     "id": "YlY2g2xrl6Q",
@@ -2849,7 +2971,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "YlY2g2xrl6Q",
+    "documentId": "video.youtube-3f623b2b22d32bd95b6d"
   },
   "python-for-data-work-files-and-csv": {
     "id": "H-hagjt65cE",
@@ -2895,7 +3019,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "H-hagjt65cE",
+    "documentId": "video.youtube-685b28265c5a76497f9c"
   },
   "python-for-data-work-dataframes-basics": {
     "id": "EXIgjIBu4EU",
@@ -2941,7 +3067,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "EXIgjIBu4EU",
+    "documentId": "video.youtube-c3e21765be64cbde5bc9"
   },
   "python-for-data-work-cleaning-data": {
     "id": "KdmPHEnPJPs",
@@ -2987,7 +3115,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "KdmPHEnPJPs",
+    "documentId": "video.youtube-4737faa26e1447f2c924"
   },
   "python-for-data-work-groupby-and-aggregation": {
     "id": "VRmXto2YA2I",
@@ -3033,7 +3163,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "VRmXto2YA2I",
+    "documentId": "video.youtube-33fc6fdbd4a70a47298a"
   },
   "python-for-data-work-matplotlib-basics": {
     "id": "7Lc2AxiM17o",
@@ -3079,7 +3211,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "7Lc2AxiM17o",
+    "documentId": "video.youtube-437a2078743f802dce23"
   },
   "python-for-data-work-seaborn-statistical-plots": {
     "id": "rLVCSmtoA7U",
@@ -3125,7 +3259,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "rLVCSmtoA7U",
+    "documentId": "video.youtube-da5812a2d045ff3a901b"
   },
   "python-for-data-work-telling-a-story-with-charts": {
     "id": "fBgk_cNCnsk",
@@ -3171,7 +3307,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "fBgk_cNCnsk",
+    "documentId": "video.youtube-f7212e4d9c861e407aee"
   },
   "python-for-data-work-jupyter-notebooks": {
     "id": "YuWZNV4BkkY",
@@ -3217,7 +3355,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "YuWZNV4BkkY",
+    "documentId": "video.youtube-43e818d2c8a28ef7a953"
   },
   "python-for-data-work-virtual-environments": {
     "id": "Y21OR1OPC9A",
@@ -3263,7 +3403,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "Y21OR1OPC9A",
+    "documentId": "video.youtube-ccf1176bc72350d6073e"
   },
   "python-for-data-work-automating-a-data-job": {
     "id": "eZfD6x9FJ4E",
@@ -3309,7 +3451,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "eZfD6x9FJ4E",
+    "documentId": "video.youtube-63655c57d4b8d8d6bcb6"
   },
   "system-design-foundations-load-balancing": {
     "id": "chyZRNT7eEo",
@@ -3355,7 +3499,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "chyZRNT7eEo",
+    "documentId": "video.youtube-10f838bdbdedb8e8cb99"
   },
   "system-design-foundations-caching-layers": {
     "id": "wh98s0XhMmQ",
@@ -3401,7 +3547,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "wh98s0XhMmQ",
+    "documentId": "video.youtube-32004efaf60642294289"
   },
   "system-design-foundations-message-queues": {
     "id": "1ISRd0bS714",
@@ -3447,7 +3595,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "1ISRd0bS714",
+    "documentId": "video.youtube-ca6155079f0eb848f850"
   },
   "system-design-foundations-sharding-and-partitioning": {
     "id": "be6PLMKKSto",
@@ -3493,7 +3643,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "be6PLMKKSto",
+    "documentId": "video.youtube-3ca62a325a423d8429e9"
   },
   "system-design-foundations-replication": {
     "id": "bI8Ry6GhMSE",
@@ -3539,7 +3691,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "bI8Ry6GhMSE",
+    "documentId": "video.youtube-f1c5ff38794c7dbd81dc"
   },
   "system-design-foundations-consistency-and-cap": {
     "id": "gkg-FAEXIkY",
@@ -3585,7 +3739,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "gkg-FAEXIkY",
+    "documentId": "video.youtube-8b4a92c903860f53684e"
   },
   "system-design-foundations-rest-vs-graphql": {
     "id": "yWzKJPw_VzM",
@@ -3631,7 +3787,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "yWzKJPw_VzM",
+    "documentId": "video.youtube-f29b53a88cb3ee10b440"
   },
   "system-design-foundations-rate-limiting": {
     "id": "YXkOdWBwqaA",
@@ -3677,7 +3835,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "YXkOdWBwqaA",
+    "documentId": "video.youtube-ce475720e3723de55171"
   },
   "system-design-foundations-idempotency-and-retries": {
     "id": "t99NvIazD68",
@@ -3723,7 +3883,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "t99NvIazD68",
+    "documentId": "video.youtube-8c1bce9f37ce3f52d81a"
   },
   "system-design-foundations-observability": {
     "id": "aJpzr8648XE",
@@ -3769,7 +3931,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "aJpzr8648XE",
+    "documentId": "video.youtube-b5febc658493333884bd"
   },
   "system-design-foundations-failure-modes-and-timeouts": {
     "id": "nzeKH7moGfo",
@@ -3815,7 +3979,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "nzeKH7moGfo",
+    "documentId": "video.youtube-4daaa07a3165a583ffd1"
   },
   "system-design-foundations-capacity-estimation": {
     "id": "UC5xf8FbdJc",
@@ -3861,7 +4027,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "UC5xf8FbdJc",
+    "documentId": "video.youtube-0dca6e4d3e182781f285"
   },
   "postgresql-for-developers-select-and-joins": {
     "id": "G3lJAxg1cy8",
@@ -3907,7 +4075,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "G3lJAxg1cy8",
+    "documentId": "video.youtube-3e5cb7356c9ab3fe756c"
   },
   "postgresql-for-developers-aggregates-and-grouping": {
     "id": "nNrgRVIzeHg",
@@ -3953,7 +4123,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "nNrgRVIzeHg",
+    "documentId": "video.youtube-840f90707aa4f798b09b"
   },
   "postgresql-for-developers-ctes-and-window-functions": {
     "id": "rIcB4zMYMas",
@@ -3999,7 +4171,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "rIcB4zMYMas",
+    "documentId": "video.youtube-6dfb8fa3662c0c355e19"
   },
   "postgresql-for-developers-normalization": {
     "id": "FzVCGou8SMA",
@@ -4045,7 +4219,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "FzVCGou8SMA",
+    "documentId": "video.youtube-a5cc2ee22b0782f6c5ad"
   },
   "postgresql-for-developers-constraints-and-keys": {
     "id": "5kiMg7GXAsY",
@@ -4091,7 +4267,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "5kiMg7GXAsY",
+    "documentId": "video.youtube-1f252dd6d01d4d2bea7b"
   },
   "postgresql-for-developers-data-types-and-jsonb": {
     "id": "PZFiThbuTFg",
@@ -4137,7 +4315,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "PZFiThbuTFg",
+    "documentId": "video.youtube-d59c3852ce6292a1063f"
   },
   "postgresql-for-developers-indexes": {
     "id": "NI9wYuVIYcA",
@@ -4183,7 +4363,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "NI9wYuVIYcA",
+    "documentId": "video.youtube-3938e97d423bc997b6f3"
   },
   "postgresql-for-developers-explain-analyze": {
     "id": "P7EUFtjeAmI",
@@ -4229,7 +4411,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "P7EUFtjeAmI",
+    "documentId": "video.youtube-3768becca2cc8e47fd7d"
   },
   "postgresql-for-developers-query-tuning": {
     "id": "YON9PliOYFk",
@@ -4275,7 +4459,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "YON9PliOYFk",
+    "documentId": "video.youtube-45e22e2bb210b3bc7093"
   },
   "postgresql-for-developers-transactions-and-isolation": {
     "id": "G8wDjV0N9tk",
@@ -4321,7 +4507,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "G8wDjV0N9tk",
+    "documentId": "video.youtube-a6bd1c0f42a83684a381"
   },
   "postgresql-for-developers-migrations": {
     "id": "mr_J5v398Qo",
@@ -4367,7 +4555,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "mr_J5v398Qo",
+    "documentId": "video.youtube-9b6440e1acef8491e868"
   },
   "postgresql-for-developers-backups-and-pooling": {
     "id": "9IcyoLxRAYY",
@@ -4413,7 +4603,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "9IcyoLxRAYY",
+    "documentId": "video.youtube-35123668db0a94333995"
   },
   "devops-with-docker-and-kubernetes-docker-images-and-dockerfiles": {
     "id": "SnSH8Ht3MIc",
@@ -4459,7 +4651,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "SnSH8Ht3MIc",
+    "documentId": "video.youtube-50d9318b42a485da7929"
   },
   "devops-with-docker-and-kubernetes-layers-and-build-cache": {
     "id": "_Q9KSFUZH0c",
@@ -4505,7 +4699,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "_Q9KSFUZH0c",
+    "documentId": "video.youtube-f2068d6bea90fa320154"
   },
   "devops-with-docker-and-kubernetes-docker-compose": {
     "id": "iTL3Edxzgug",
@@ -4551,7 +4747,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "iTL3Edxzgug",
+    "documentId": "video.youtube-26f9812dce46ba944e60"
   },
   "devops-with-docker-and-kubernetes-pods-and-deployments": {
     "id": "TlHvYWVUZyc",
@@ -4597,7 +4795,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "TlHvYWVUZyc",
+    "documentId": "video.youtube-121241d20750fcf2564c"
   },
   "devops-with-docker-and-kubernetes-services-and-ingress": {
     "id": "NPFbYpb0I7w",
@@ -4643,7 +4843,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "NPFbYpb0I7w",
+    "documentId": "video.youtube-ca6738e105e0b5b72dc9"
   },
   "devops-with-docker-and-kubernetes-configmaps-and-secrets": {
     "id": "FAnQTgr04mU",
@@ -4689,7 +4891,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "FAnQTgr04mU",
+    "documentId": "video.youtube-e7ef9aec9af60d286ff5"
   },
   "devops-with-docker-and-kubernetes-ci-cd-pipelines": {
     "id": "YLtlz88zrLg",
@@ -4735,7 +4939,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "YLtlz88zrLg",
+    "documentId": "video.youtube-7713e3895c7a31bc88c2"
   },
   "devops-with-docker-and-kubernetes-rolling-deploys-and-rollbacks": {
     "id": "wWA9JgAvuqw",
@@ -4781,7 +4987,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "wWA9JgAvuqw",
+    "documentId": "video.youtube-1760510ffc17b284999f"
   },
   "devops-with-docker-and-kubernetes-helm": {
     "id": "jUYNS90nq8U",
@@ -4827,7 +5035,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "jUYNS90nq8U",
+    "documentId": "video.youtube-35fe95df168bdcfc50fc"
   },
   "devops-with-docker-and-kubernetes-monitoring-and-logs": {
     "id": "gBdyIv9d_O8",
@@ -4873,7 +5083,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "gBdyIv9d_O8",
+    "documentId": "video.youtube-ecfb9ba736234dc8c932"
   },
   "devops-with-docker-and-kubernetes-autoscaling": {
     "id": "dRC-5Z2p7Ns",
@@ -4919,7 +5131,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "dRC-5Z2p7Ns",
+    "documentId": "video.youtube-e153c19434b8f5a94125"
   },
   "devops-with-docker-and-kubernetes-resource-limits-and-troubleshooting": {
     "id": "JLw_pHLCN4Y",
@@ -4965,7 +5179,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "JLw_pHLCN4Y",
+    "documentId": "video.youtube-3b87d8674519904e3223"
   },
   "practical-web-security-owasp-top-ten": {
     "id": "wUaeKEl1RCw",
@@ -5011,7 +5227,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "wUaeKEl1RCw",
+    "documentId": "video.youtube-16f433aa75e2257f6009"
   },
   "practical-web-security-authentication-vs-authorization": {
     "id": "7ijBiXddB7w",
@@ -5057,7 +5275,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "7ijBiXddB7w",
+    "documentId": "video.youtube-56236abf74ba06db4c5a"
   },
   "practical-web-security-secure-defaults": {
     "id": "130ioey4isw",
@@ -5103,7 +5323,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "130ioey4isw",
+    "documentId": "video.youtube-d07460cb56238e22713f"
   },
   "practical-web-security-cross-site-scripting": {
     "id": "pD6C1-zSxIM",
@@ -5149,7 +5371,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "pD6C1-zSxIM",
+    "documentId": "video.youtube-d4d1ef294112b900893b"
   },
   "practical-web-security-sql-injection": {
     "id": "AOXMDbc11AE",
@@ -5195,7 +5419,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "AOXMDbc11AE",
+    "documentId": "video.youtube-143045d2a64222680729"
   },
   "practical-web-security-csrf": {
     "id": "80S8h5hEwTY",
@@ -5241,7 +5467,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "80S8h5hEwTY",
+    "documentId": "video.youtube-ff6df59d5ab9b3d7156f"
   },
   "practical-web-security-sessions-vs-jwt": {
     "id": "z9-_YQWxwJ4",
@@ -5287,7 +5515,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "z9-_YQWxwJ4",
+    "documentId": "video.youtube-9ec12e86bf0a4a639148"
   },
   "practical-web-security-password-storage": {
     "id": "qgpsIBLvrGY",
@@ -5333,7 +5563,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "qgpsIBLvrGY",
+    "documentId": "video.youtube-15599fd2233c9a69c8d3"
   },
   "practical-web-security-mfa-and-oauth": {
     "id": "ZV5yTm4pT8g",
@@ -5379,7 +5611,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "ZV5yTm4pT8g",
+    "documentId": "video.youtube-538614d188ea6b0ee837"
   },
   "practical-web-security-https-headers-and-csp": {
     "id": "4bQeGUzHpOE",
@@ -5425,7 +5659,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "4bQeGUzHpOE",
+    "documentId": "video.youtube-1728af13926cbbb10e9b"
   },
   "practical-web-security-secrets-management": {
     "id": "FQE_gyEwu0Q",
@@ -5471,7 +5707,9 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "FQE_gyEwu0Q",
+    "documentId": "video.youtube-bda99ac87a10ea103374"
   },
   "practical-web-security-dependency-and-supply-chain": {
     "id": "njm1nZlrR68",
@@ -5517,6 +5755,8 @@
         "text": "The lesson closes with practical checks, common failure modes, and a concise recap."
       }
     ],
-    "ingestedAt": "2026-09-01T00:00:00.000Z"
+    "ingestedAt": "2026-09-01T00:00:00.000Z",
+    "youtubeId": "njm1nZlrR68",
+    "documentId": "video.youtube-857782a051e92d7eae3d"
   }
 }

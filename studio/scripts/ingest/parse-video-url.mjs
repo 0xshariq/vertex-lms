@@ -55,6 +55,14 @@ export function parseVideoUrl(url) {
  * The document id for a parsed video. Sanity ids accept only `[A-Za-z0-9._-]`, so anything else —
  * the slash inside a Bunny id, for one — is stripped (AGENTS.md §9).
  */
+import {createHash} from 'node:crypto'
+
+/**
+ * Sanity document ids deliberately do not mirror provider ids. YouTube ids may begin with a hyphen,
+ * which Sanity rejects as an invalid id element. Keep the provider id as data (`videoId`) and use a
+ * stable, opaque hash for the document id instead.
+ */
 export function videoDocumentId({provider, id}) {
-  return `video.${provider}-${id.replace(/[^A-Za-z0-9_-]+/g, '-')}`
+  const digest = createHash('sha256').update(`${provider}:${id}`).digest('hex').slice(0, 20)
+  return `video.${provider}-${digest}`
 }
