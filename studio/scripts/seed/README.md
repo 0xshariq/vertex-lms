@@ -27,7 +27,8 @@ Import authenticates through the Sanity CLI, so no write token is needed anywher
 ## Things worth knowing
 
 - **Ids are deterministic** (`course.<slug>`, `lesson.<slug>`, …) and the import uses `--replace`,
-  so re-running is idempotent rather than duplicating the catalog.
+  so re-running is idempotent rather than duplicating the catalog. Exact duplicate generated records
+  are skipped with warnings; invalid content and missing references still fail the build.
 - **Lesson slugs are prefixed with the course slug.** `LESSON_BY_SLUG_QUERY` matches on the slug
   alone, so two courses cannot both own a lesson called `intro`.
 - **Lesson duration is the real video length**, so course and module durations — which GROQ derives

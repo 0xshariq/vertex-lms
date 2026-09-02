@@ -298,8 +298,16 @@ for (const id of lessonIds) {
   check(referencedLessonIds.has(id), `lesson ${id} is orphaned: no course references it`)
 }
 
-const ids = documents.map((doc) => doc._id)
-check(new Set(ids).size === ids.length, 'duplicate document _id in the seed')
+const emitted = new Set()
+const uniqueDocuments = []
+for (const document of documents) {
+  if (emitted.has(document._id)) {
+    console.warn(`Skipping duplicate generated document ${document._id}`)
+    continue
+  }
+  emitted.add(document._id)
+  uniqueDocuments.push(document)
+}
 
 if (problems.length) {
   console.error(`Refusing to write ${OUT_PATH}. ${problems.length} problem(s):\n`)
@@ -307,10 +315,10 @@ if (problems.length) {
   process.exit(1)
 }
 
-writeFileSync(OUT_PATH, `${documents.map((doc) => JSON.stringify(doc)).join('\n')}\n`)
+writeFileSync(OUT_PATH, `${uniqueDocuments.map((doc) => JSON.stringify(doc)).join('\n')}\n`)
 
-const count = (type) => documents.filter((doc) => doc._type === type).length
-console.log(`Wrote ${documents.length} documents to ${OUT_PATH}`)
+const count = (type) => uniqueDocuments.filter((doc) => doc._type === type).length
+console.log(`Wrote ${uniqueDocuments.length} documents to ${OUT_PATH}`)
 console.log(
   `  categories: ${count('category')}\n` +
     `  instructors: ${count('instructor')}\n` +

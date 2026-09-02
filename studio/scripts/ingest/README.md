@@ -39,7 +39,9 @@ Both reads and the import authenticate through the Sanity CLI, so no token is ne
 - **The URL list comes from the dataset**, not from the seed files, so hand-authored lessons are
   covered too. Two lessons sharing a video produce one document.
 - **Ids are deterministic** (`video.youtube-<videoId>`) and the import uses `--replace`, so
-  re-running is idempotent. Array `_key`s are deterministic for the same reason.
+  re-running is idempotent. Array `_key`s are deterministic for the same reason. Duplicate live
+  documents and duplicate cache entries are ignored with warnings; malformed or incomplete entries
+  still fail validation.
 - **Nothing partial is ever cached.** A video whose captions do not come back is reported as a
   failure and retried on the next run, rather than written as a document with an empty transcript.
 - **Chunks are ~45 s or ~350 characters**, whichever comes first, and never split mid-cue — so every
